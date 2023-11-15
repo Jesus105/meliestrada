@@ -102,7 +102,7 @@ export const Cart = () =>{
                             total
                         }
                     </h3>
-                    <button onClick={() => (total <= 1000 ? window.alert("La cantidad mínima de compra son $1000 pesos"): makeOrder())}>Pagar</button>
+                    <button onClick={() => (total <= 1000 ? window.alert("La cantidad mínima de compra son $1000.00"): makeOrder())}>Pagar</button>
                 </div>
                 
             </div>

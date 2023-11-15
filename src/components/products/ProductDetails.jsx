@@ -5,7 +5,7 @@ import { DataContext } from "../../context/DataProvider";
 export const ProductDetails = () =>{
 
     const value = useContext(DataContext);
-    const [setDetails] = value.details;
+    const [details, setDetails] = value.details;
     const [productDetails, setProductDetails] = value.productDetails;
     const addCarrito = value.addCarrito;
 

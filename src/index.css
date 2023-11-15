@@ -616,6 +616,68 @@ input {
         height: 25px;
         cursor: pointer;
     }
+
+    .product{
+        max-width: 85%;
+    }
+
+    .order{
+        width: 100%;
+        height: 100%;
+    }
+
+    .orders{
+        width: 100%;
+        height: 100%;
+    }
+
+    .body_order{
+        height: 100%;
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .card{
+        max-width: 90%;
+        max-height: 90%;
+        margin-bottom: 10px;
+    }
+
+    #getOrders{
+        max-width: 80%;
+    }
+
+    #myForm{
+        max-width: 80%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    #myForm label{
+        margin-top: 10px;
+    }
+    #myForm input{
+        margin-top: 10px;
+    }
+
+    .details{
+        width: 100%;
+        height: 100%;
+    }
+
+    .detail{
+        width: 80%;
+        height: 80%;
+        padding: 50px;
+    }
+
+    .detail_close{
+        margin-top: 0px;
+    }
+
+    .btn {
+        font-size: 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 600px){

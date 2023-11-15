@@ -2,6 +2,8 @@ import React, { useContext} from "react";
 import logo from '../../img/logo.webp'
 import { DataContext } from "../../context/DataProvider";
 import '../../index.css'
+import MenuButton from "./MenuButton";
+import Navbar from "./Navbar";
 
 
 export const Header = () => {
@@ -12,6 +14,11 @@ export const Header = () => {
     const [categorias] = value.categorias;
     const [categoriaActiva, setCategoriaActiva] = value.categoriaActiva;
     const [order, setOrder] = value.order;
+    const [open, setOpen] = value.open;
+
+    const handleClick = () => {
+        setOpen(!open);
+      };
 
     const togleCActiva = (id) =>{
         setCategoriaActiva(id)
@@ -29,6 +36,7 @@ export const Header = () => {
 
     return(
         <header>
+
             <a href="#" className="img-logo">
                 <div className="logo">
                     <img src={logo} alt="logo import e-nova" />

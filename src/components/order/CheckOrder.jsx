@@ -30,7 +30,7 @@ export const CheckOrder = () =>{
 
             <div className="body_order">
             <h2>Recuperar pedidos</h2>
-                <form id="myForm">
+                <form id="getOrders">
 
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefonoOrden" name="telefono" pattern="[0-9]{10}" required/>

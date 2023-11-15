@@ -17,6 +17,8 @@ export const DataProvider = (props) =>{
     const [payment, setPayment] = useState(false);
     const [order, setOrder] = useState(false);
     const [ordenes, setOrdenes] = useState([]);
+    const [open, setOpen] = useState(false);
+
 
 
 
@@ -169,7 +171,9 @@ export const DataProvider = (props) =>{
         makeOrder: makeOrder,
         order: [order, setOrder],
         ordenes: [ordenes, setOrdenes],
-        getOrders: getOrders
+        getOrders: getOrders,
+        open: [open, setOpen]
+
     }
 
     return (
