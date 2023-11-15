@@ -34,7 +34,7 @@ export const Cart = () =>{
     const suma = id =>{
         carrito.forEach(item =>{
             if(item.id === id){
-                (item.cantidad == item.amount ? item.cantidad=item.cantidad : item.cantidad++)
+                (item.cantidad === item.amount ? item.cantidad=item.cantidad : item.cantidad++)
             }
             setCarrito([...carrito])
         })

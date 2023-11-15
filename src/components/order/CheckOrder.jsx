@@ -1,7 +1,5 @@
 import React, { useContext, useState } from "react";
 import { DataContext } from "../../context/DataProvider";
-import { Orders } from "./Orders";
-
 
 export const CheckOrder = () =>{
 

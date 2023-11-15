@@ -478,7 +478,7 @@ header .item-total{
     margin: 50px auto;
 }
 
-.order_details button{
+.body_order button{
     display: inline-block;
     padding: .3rem 1rem;
     font-size: 1.2rem;
@@ -486,6 +486,7 @@ header .item-total{
     cursor: pointer;
     background-color: #ffeaf2;
     border-radius: 10px;
+    margin: 10px auto;
 }
 
 .order_details button:hover{

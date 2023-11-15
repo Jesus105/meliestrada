@@ -101,7 +101,7 @@ export const DataProvider = (props) =>{
             })
             .then((data) => {
               console.log('Response:', data);
-              setCarrito([])
+
 
             })
             .catch((error) => {
