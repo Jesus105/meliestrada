@@ -18,6 +18,7 @@ export const DataProvider = (props) =>{
     const [order, setOrder] = useState(false);
     const [ordenes, setOrdenes] = useState([]);
     const [open, setOpen] = useState(false);
+    const [pickupInStore, setPickupInStore] = useState(false);
 
 
 
@@ -71,7 +72,7 @@ export const DataProvider = (props) =>{
         });
       }
 
-    const makeOrder = (dir, tel) =>{
+    const makeOrder = (name, dir, tel, store) =>{
         let idsProductos = carrito.map(function(producto) {
             return producto.id;
         });
@@ -83,8 +84,10 @@ export const DataProvider = (props) =>{
         let order = {
             productIds: idsProductos,
             productsAmount: cantidadProductos,
+            clientName:name,
             phone: tel,
             address: dir,
+            delivery: store,
             totalPrice: total
         }
 
@@ -172,7 +175,8 @@ export const DataProvider = (props) =>{
         order: [order, setOrder],
         ordenes: [ordenes, setOrdenes],
         getOrders: getOrders,
-        open: [open, setOpen]
+        open: [open, setOpen],
+        pickupInStore: [pickupInStore, setPickupInStore]
 
     }
 

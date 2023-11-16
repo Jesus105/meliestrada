@@ -26,8 +26,8 @@ export const ProductDetails = () =>{
 
                 <div className="body_details">
 
-                    <p>Precio unitario: {productDetails.price}$</p>
-                    <p>Precio mayoreo: {productDetails.wholesalePrice}$</p>
+                    <p>Precio unitario: ${productDetails.price}</p>
+                    <p>Precio mayoreo: ${productDetails.wholesalePrice}</p>
                     <p>Cantidad minima para mayoreo: {productDetails.amount_wholesalePrice}</p>
                     <p>Unidades disponibles: {productDetails.amount}</p>
                     

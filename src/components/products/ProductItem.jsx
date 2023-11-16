@@ -42,7 +42,7 @@ export const ProductItem = ({
         <div>
             <div className="product">
                 <div className="product_img">
-                    <a href="#">
+                    <a onClick={() => toogleDetails(id)}>
                         <img src={images[0].url} alt={name} />
                     </a>
                 </div>
@@ -55,10 +55,9 @@ export const ProductItem = ({
                     <button className="btn" onClick={() => addCarrito(id)}>
                         Añadir al carrito
                     </button>
-                    <a onClick={() => toogleDetails(id)}>
-                        Ver Detalles
-                    </a>
-
+                    <button className="btn" onClick={() => toogleDetails(id)}>
+                        Ver detalles                    
+                    </button>
                 </div>
             </div>
         </div>
